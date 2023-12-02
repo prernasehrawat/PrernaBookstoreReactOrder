@@ -1,0 +1,25 @@
+
+
+.home-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+
+}
+
+.home-list-li{
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+}
+
+.home-list-div {
+    padding: 0.5em 0;
+    background: rgba(0, 0, 0, 0.5); /* last # is percent opacity */
+    color: white;
+    transform: translateY(-2.25em);
+    margin-bottom: -2em;
+}
+

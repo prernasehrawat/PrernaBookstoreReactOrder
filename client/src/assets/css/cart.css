@@ -1,0 +1,32 @@
+/*.cart-page h1{*/
+/*    font-size: large;*/
+/*    justify-content: center;*/
+/*    color: white;*/
+/*}*/
+
+
+.Continue-shopping{
+    padding: 10px;
+    border-radius: 19px;
+    margin: 2px;
+    /*background-color: #f8a6b3;*/
+}
+.Continue-shopping:hover{
+    background-color: rgba(69, 150, 83, 100%);
+}
+.trial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Checkout{
+    padding: 21px;
+    border-radius: 21px;
+    margin: 2px;
+    background-color:  black;
+    color: white;
+}
+.Checkout:hover{
+    background-color: rgba(69, 150, 83, 100%);
+}

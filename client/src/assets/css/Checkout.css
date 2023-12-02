@@ -1,0 +1,189 @@
+/* Main container for the checkout page */
+.checkout-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the children horizontally */
+    align-items: center; /* Align the children at the top */
+    background-color: white; /* Black background */
+    color: white; /* Text color */
+    padding: 40px; /* Space around the content */
+    gap: 20px; /* Space between the columns */
+    height: 60vh; /* Full height of the viewport */
+}
+.align-div{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+}
+
+/* Left column: Shipping Info */
+.form-container {
+    background-color: black; /* Dark gray background */
+    flex-basis: 50%; /* Takes up half of the checkout container width */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+}
+
+/* Right column: Order Summary */
+.order-summary-container {
+    background-color: rgba(69, 150, 83, 100%); /* Green background */
+    color: #fff; /* White text color */
+    /*flex-basis: 34%; !* Takes up less space than the form container *!*/
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    width: 600px;
+}
+
+/* Form and summary shared styles */
+.form-container,
+.order-summary-container {
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+}
+
+/* Styling for form inputs and labels */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select {
+    background-color: #2c2c2c; /* Slightly lighter gray for inputs */
+    border: none;
+    border-radius: 4px; /* Rounded corners for inputs */
+    padding: 15px; /* Spacious padding for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+/* Styling for the submit button */
+input[type="submit"] {
+    background-color: #4CAF50; /* Green background to match the summary */
+    border: none;
+    border-radius: 4px; /* Rounded corners for button */
+    padding: 15px; /* Spacious padding for button */
+    font-size: 1rem; /* Larger font size for button text */
+    color: white; /* White text color for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font: bold;
+}
+
+.input-group label,
+.input-group input {
+    display: block;
+    width: 80%;
+}
+
+.input-group {
+    flex: 1;
+    margin-right: 10px; /* Add a right margin to all input groups except last child */
+}
+
+.input-group:last-child {
+    margin-right: 0; /* No margin for the last child to align properly */
+}
+
+/* Styling for individual order items in the summary */
+.order-item {
+    display: flex;
+    justify-content: space-between; /* Space out the name and price */
+    margin-bottom: 10px; /* Space between order items */
+}
+
+/* Quantity button styles */
+.quantity-button {
+    background-color: #333; /* Dark gray background */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* White text color */
+    padding: 5px 10px; /* Smaller padding for a button-like appearance */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .checkout-page-container {
+        flex-direction: column; /* Stack the containers on top of each other */
+        align-items: center; /* Center them horizontally */
+    }
+
+    .form-container,
+    .order-summary-container {
+        width: 90%; /* Full width with a little margin on the sides */
+        flex-basis: auto; /* Override the flex-basis set earlier */
+
+    }
+
+    .input-row {
+        flex-direction: column; /* Stack inputs on smaller screens */
+    }
+
+    .input-group {
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+    .form-row-card-expiry-row {
+        flex-direction: row; /* Stack inputs on smaller screens */
+    }
+
+}
+.item-details{
+    display: flex;
+    flex-direction: column;
+    /*flex-basis: 10%;*/
+    /*padding-right: 20%;*/
+
+}
+.order-items{
+    padding: 10px;
+}
+.order-item{
+    /*padding: 10px;*/
+    margin: 10px;
+
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkhout-chevron{
+    display: flex;
+    flex-direction: row;
+    gap: 0em;
+}
+.form-row-card-expiry-row{
+    display: flex;
+    flex-direction: row;
+    gap: 8em;
+}
+
+.error{
+    color:red;
+    font-size: large;
+    font-weight: bold;
+}
+.error-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+.expiry-error{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-left: 29rem;
+    color: red;
+}

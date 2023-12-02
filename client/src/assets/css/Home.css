@@ -1,0 +1,148 @@
+
+.middle-section{
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color:black ;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* justify-content: center; */
+}
+.middle-left{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    font-size: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.middle-right{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom:0px;
+    padding-left: 80px;
+    padding-right:40px;
+    align-items: center;
+}
+.bestseller-image{
+    padding-top: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 5px;
+    display: flex;
+    gap: 4em;
+}
+.left-write-up-best{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    align-items: center ;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+.left-write-up-discover{
+    /*font-size: 30px;*/
+    /*align-items: center;*/
+    text-align: center;
+}
+
+.left-write-up-best p{
+    padding: 0;
+    margin: 0;
+}
+.welcome-text{
+    font-size: 40px;
+
+}
+.shop-now{
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.shop-now-button{
+    display: flex;
+    border-radius: 30px;
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right:20px;
+    align-items: center;
+}
+
+/*.home-pages  {*/
+/*    display: flex;*/
+
+/*}*/
+
+/*.welcome-text {*/
+/*    width: 30em;*/
+/*    background-color: var(--neutral-color);*/
+/*    color: whitesmoke;*/
+/*    padding: 1rem;*/
+/*    margin-top: 1rem;*/
+/*}*/
+/*.flow-content > * + * {*/
+/*    margin-top: 1rem;*/
+/*}*/
+
+/*
+  Giving various sections of your page this utility class
+  will ensure a nice padding around the contents.
+*/
+.container {
+    padding: 2rem;
+}
+/* Add this CSS to your component's CSS file or a global CSS file */
+.shop-now-button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shop-now-button:hover {
+    background-color: #e53d93;
+}
+
+/* Add this CSS to your component's CSS file or a global CSS file */
+.image-transition {
+    transform: translateY(100%);
+    animation: imageUp 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes imageUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.shop-now-button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shop-now-button:hover {
+    background-color: #0056b3;
+}

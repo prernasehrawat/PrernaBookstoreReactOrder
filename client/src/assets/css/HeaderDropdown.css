@@ -1,0 +1,38 @@
+
+.header-dropdown {
+    position: relative !important;
+}
+
+.categories-button {
+    background-color: var(--primary-color-dark);
+    margin-top: 0.25em !important;
+}
+
+.header-dropdown ul {
+    background-color: rgba(26, 84, 36, 79%) !important;
+    color: black !important;
+    display: none !important;
+    margin: 0 !important;
+}
+
+.header-dropdown li {
+    padding: 0.25em 0.5em !important;
+}
+
+.header-dropdown a {
+    color: white ;
+    text-decoration: none;
+}
+
+.header-dropdown li:hover {
+    background: black !important;
+}
+
+.header-dropdown:hover ul {
+    display: block !important;
+    position: absolute !important;
+    min-width: 8em !important;
+    z-index: 1 !important;
+    cursor: pointer !important;
+    list-style-type: none !important;
+}

@@ -1,0 +1,120 @@
+.full-header{
+    display: flex;
+    /* border: 1px solid black; */
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: black; */
+    color: white;
+    width: 100%;
+}
+.top-header{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    gap: 12.7em;
+    background-color: rgba(69, 150, 83, 100%);
+    font-size: 25px;
+}
+
+.bottom-header{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    gap: 8em;
+    font-size: 25px;
+    padding-top:10px;
+    padding-bottom:10px;
+    /* background-color: black; */
+    background-color: rgba(26, 84, 36, 79%);
+    list-style-type: none;
+}
+.bookstore-logo{
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: flex-start;
+    width: 150px;
+    height: auto;
+}
+.search-bar{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: end ;
+    width: 660px;
+    height: 30px;
+    border-radius: 19px;
+}
+
+.title-and-search-bar{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+.like-cart-login{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 2.1em;
+}
+
+/*.button {*/
+/*    text-decoration: none;*/
+/*    padding: 10px 20px; !* Adjust the padding as needed *!*/
+/*    background-color: antiquewhite; !* Change to your desired background color *!*/
+/*    color: red;*/
+/*    !* Change to your desired text color *!*/
+/*    border: none;*/
+/*    border-radius: 5px; !* Adjust the border radius as needed *!*/
+/*    transition: background-color 0.3s ease;*/
+/*}*/
+/*.button:hover {*/
+/*    background-color: #0056b3; !* Change to your desired hover background color *!*/
+/*}*/
+.cart-amount{
+    position: absolute;
+    top: 95px;
+    right: 290px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.like-cart-login a {
+    font-size: 20px;}
+
+.cart-button {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cart-button:hover {
+    background-color: #3749e7; /* Change the background color when hovered over */
+}
+
+.login-button {
+    background-color: #ffffff;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.login-button:hover {
+    background-color: #3749e7; /* Change the background color when hovered over */
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}

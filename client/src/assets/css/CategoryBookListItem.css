@@ -1,0 +1,109 @@
+/*.body{*/
+/*    display: flex;*/
+/*    max-width: 70rem;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.book-boxes{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    gap: 1em;*/
+/*    flex-wrap: wrap;*/
+/*    width: 80%;*/
+/*    padding-top:0px;*/
+/*    border: 1px solid black;*/
+/*    */
+/*}*/
+.book{
+    display: flex;
+    width: 49%;
+    flex-direction: row;
+
+    /*border: 1px solid black;*/
+    gap:1.5em;
+    justify-content: flex-start;
+    align-items: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+.addtocart-button{
+    border-radius: 10px;
+
+}
+
+.book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 10px;
+    /* justify-content:space-around; */
+    /* padding-bottom: 10px; */
+}
+.addtocart{
+    margin-top: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: forestgreen;
+
+}
+.addtocart:hover {
+    background-color: hotpink; /* Change to your desired hover background color */
+    color: #fff; /* Change to your desired hover text color */
+}
+
+.read-now-button{
+    margin-bottom: -1.6em;
+    text-align: center;
+    position: absolute;
+    left: 11px;
+    bottom: 25px;
+    width: 200px;
+    opacity: 77%;
+    background: #f8a6b3;
+    border-radius: 0px;
+    cursor: pointer;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
+    /* align-items: center; */
+    /* transform: translate(-1.6em);   */
+    /* padding: 0.1em;  */
+}
+.book-image{
+    padding-top: 10px;
+    padding-left: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 25px; */
+    /* height: 25px; */
+    /* justify-content: center;  */
+    /* padding-bottom: 10px; */
+}
+.book-rel{
+    position: relative;
+
+    width: 200px;
+    height: 200px;
+}
+
+
+
+/*.book-box {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    background-color: var(--card-background-color);*/
+/*    padding: 1em;*/
+/*    gap: 0.25em;*/
+/*}*/
+
+.book-title {
+    font-weight: bold;
+}
+.book-author {
+    font-style: italic;
+}
