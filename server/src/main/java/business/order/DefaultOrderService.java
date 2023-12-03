@@ -47,19 +47,33 @@ public class DefaultOrderService implements OrderService {
 			throw new ApiException.ValidationFailure("Invalid address field");
 		}
 
-		String phone = customerForm.getPhone().replaceAll("[\\s\\-()]", "");
+		String phone = customerForm.getPhone();
+		if (phone == null || phone.isBlank()) {
+			throw new ApiException.ValidationFailure("Phone number missing");
+		}
+
+		phone = customerForm.getPhone().replaceAll("[\\s\\-()]", "");
 		if (!phone.matches("\\d{10}")) {
 			throw new ApiException.ValidationFailure("Invalid phone number");
 		}
 
 		// Email validation
 		String email = customerForm.getEmail();
+		if (email == null || email.isBlank()) {
+			throw new ApiException.ValidationFailure("Missing email address");
+		}
+
 		if (email.contains(" ") || !email.contains("@") || email.endsWith(".")) {
 			throw new ApiException.ValidationFailure("Invalid email address");
 		}
 
 		// Credit card number validation
-		String ccNumber = customerForm.getCcNumber().replaceAll("\\s|-", "");
+		String ccNumber = customerForm.getCcNumber();
+		if (ccNumber == null || ccNumber.isBlank()) {
+			throw new ApiException.ValidationFailure("Missing credit card number");
+		}
+
+		ccNumber = customerForm.getCcNumber().replaceAll("\\s|-", "");
 		if (ccNumber.length() < 14 || ccNumber.length() > 16) {
 			throw new ApiException.ValidationFailure("Invalid credit card number");
 		}
